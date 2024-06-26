@@ -3,8 +3,8 @@
 Make sure you have downloaded Jetson Inference and Docker Image from here: https://github.com/dusty-nv/jetson-inference
 
 This is a algorithm taht can identify types of trash and categroize them into recycycling and garbage
-
-
+[
+](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_e7ZX5pKIq0zCqBaMcqhNDv0NfIgO8WGfw&s)
 
 # The Algorithm
 
