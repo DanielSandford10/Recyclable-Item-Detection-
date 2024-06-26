@@ -11,7 +11,7 @@ This is a algorithm taht can identify types of trash and categroize them into re
 It uses training data of peices of trash and uses image net to categorize them into whether they can be recycled or not. It can be used in a live and pre photo modes. It runs off of a a NVIDIA Jetson Nano.
 
 ## Running this project
-
+# Training a Network
 1. Open VSCode and sign in to your Jetson Nano
 2. Make sure you have downloaded Jetson Inference and Docker Image from here: https://github.com/dusty-nv/jetson-inference
 3. Download the file and import it into your library on the device your running the info on.( Make sure its located in the jetson-inference/python/training/classification )
