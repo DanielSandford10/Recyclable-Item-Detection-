@@ -13,7 +13,7 @@ It uses training data of peices of trash and uses image net to categorize them i
 ## Training a Network
 1. Open VSCode and sign in to your Jetson Nano
 2. Make sure you have downloaded Jetson Inference and Docker Image from here: https://github.com/dusty-nv/jetson-inference
-3. Download the file and import it into your library on the device your running the info on.( Make sure its located in the jetson-inference/python/training/classification )
+3. Download the file and import it into your library on the device your running the info on.( Make sure its located in the jetson-inference/python/training/classification/data )
 4. cd back to nvidia/jetson-inference/
 5. Once that has run and you're still back in the jetson-inference folder, run ./docker/run.sh to run the docker container. (You may have to re-enter your nvidia password at this step)
 6. From inside the Docker container, change directories so you are in jetson-inference/python/training/classification
