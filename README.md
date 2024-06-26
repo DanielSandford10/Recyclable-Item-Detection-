@@ -3,7 +3,7 @@
 Make sure you have downloaded Jetson Inference and Docker Image from here: https://github.com/dusty-nv/jetson-inference
 
 This is a algorithm taht can identify types of trash and categroize them into recycycling and garbage
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_e7ZX5pKIq0zCqBaMcqhNDv0NfIgO8WGfw&s
+[]https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_e7ZX5pKIq0zCqBaMcqhNDv0NfIgO8WGfw&s
 # The Algorithm
 
 It uses training data of peices of trash and uses image net to categorize them into whether they can be recycled or not. It can be used in a live and pre photo modes. It runs off of a a NVIDIA Jetson Nano.
