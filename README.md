@@ -40,7 +40,7 @@ Run python3 train.py --help for more information about each option that's availa
 14. Set the NET and DATASET variables
     NET=models/Recycling_Trash
     DATASET=data/Recycling_Trash
-15. Run this command to see how it operates on an image from the cat folder.
+15. Run this command to see how it operates on an image from the test folder.
     imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/garbage/trash1.jpg TestImage1.jpg
 16. Open the image in VS Code.
 
