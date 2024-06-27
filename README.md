@@ -20,7 +20,7 @@ It uses training data of peices of trash and uses image net to categorize them i
 7. Now you are ready to run your script.
 
 Run the training script to re-train the network where the model-dir argument is where the model should be saved and where the data is. 
-python3 train.py --model-dir=models/cat_dog data/cat_dog
+python3 train.py --model-dir=models/Recycling_Trash data/Recycling_Trash
  
 You should immediately start to see output, but it will take a very long time to finish running. It could take hours depending on how many epochs you run for your model.
  
@@ -32,7 +32,7 @@ When running the model you can also specify the value of how many epochs and bat
 Run python3 train.py --help for more information about each option that's available for you to use, including other networks that you can try with the --arch flag.
 ## Exporting the Network
 9. Make sure you are in the docker container and in jetson-inference/python/training/classification
-10. Look in the jetson-inference/python/training/classification/models/cat_dog folder to see if there is a new model called resnet18.onnx there. That is your re-trained model!
+10. Look in the jetson-inference/python/training/classification/models/Recyling_Trash folder to see if there is a new model called resnet18.onnx there. That is your re-trained model!
 ## Processing Images
 11. Exit the docker container by pressing Ctl + D.
 12. On your nano, navigate to the jetson-inference/python/training/classification directory.
@@ -41,7 +41,7 @@ Run python3 train.py --help for more information about each option that's availa
     NET=models/cat_dog
     DATASET=data/cat_dog
 15. Run this command to see how it operates on an image from the cat folder.
-    imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/cat/01.jpg cat.jpg
+    imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/garbage/trash1.jpg TestImage1.jpg
 16. Open the image in VS Code.
 
 
