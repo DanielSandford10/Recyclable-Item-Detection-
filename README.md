@@ -32,18 +32,20 @@ When running the model you can also specify the value of how many epochs and bat
 Run python3 train.py --help for more information about each option that's available for you to use, including other networks that you can try with the --arch flag.
 ## Exporting the Network
 9. Make sure you are in the docker container and in jetson-inference/python/training/classification
-10. Look in the jetson-inference/python/training/classification/models/Recyling_Trash folder to see if there is a new model called resnet18.onnx there. That is your re-trained model!
+10. Run the onnx export script.
+python3 onnx_export.py --model-dir=models/cat_dog
+11. Look in the jetson-inference/python/training/classification/models/Recyling_Trash folder to see if there is a new model called resnet18.onnx there. That is your re-trained model!
 ## Processing Images
-11. Exit the docker container by pressing Ctl + D.
-12. On your nano, navigate to the jetson-inference/python/training/classification directory.
-13. Use ls models/Recycling_Trash/ to make sure that the model is on the nano. You should see a file called resnet18.onnx.
-14. Set the NET and DATASET variables
+12. Exit the docker container by pressing Ctl + D.
+13. On your nano, navigate to the jetson-inference/python/training/classification directory.
+14. Use ls models/Recycling_Trash/ to make sure that the model is on the nano. You should see a file called resnet18.onnx.
+15. Set the NET and DATASET variables
     NET=models/Recycling_Trash
     DATASET=data/Recycling_Trash
-15. Run this command to see how it operates on an image from the test folder.
+16. Run this command to see how it operates on an image from the test folder.
     imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/garbage/trash1.jpg TestImage1.jpg
-16. Open the image in VS Code.
+17. Open the image in VS Code.
 
 
 
-[View a video explanation here](video link)
+
