@@ -36,7 +36,7 @@ Run python3 train.py --help for more information about each option that's availa
 ## Processing Images
 11. Exit the docker container by pressing Ctl + D.
 12. On your nano, navigate to the jetson-inference/python/training/classification directory.
-13. Use ls models/cat_dog/ to make sure that the model is on the nano. You should see a file called resnet18.onnx.
+13. Use ls models/Recycling_Trash/ to make sure that the model is on the nano. You should see a file called resnet18.onnx.
 14. Set the NET and DATASET variables
     NET=models/Recycling_Trash
     DATASET=data/Recycling_Trash
