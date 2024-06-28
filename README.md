@@ -37,7 +37,7 @@ Run python3 train.py --help for more information about each option that's availa
 ## Exporting the Network
 9. Make sure you are in the docker container and in jetson-inference/python/training/classification
 10. Run the onnx export script.
-python3 onnx_export.py --model-dir=models/cat_dog
+python3 onnx_export.py --model-dir=models/Recycling_Trash
 11. Look in the jetson-inference/python/training/classification/models/Recyling_Trash folder to see if there is a new model called resnet18.onnx there. That is your re-trained model!
 ## Processing Images
 12. Exit the docker container by pressing Ctl + D.
