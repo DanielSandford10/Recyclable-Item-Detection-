@@ -4,7 +4,7 @@ Make sure you have downloaded Jetson Inference and Docker Image from here: https
 
 This is a algorithm that can identify types of trash and categroize them into recycycling and garbage
 
-FOLLOW README IF YOU WOULD LIKE TO TRAIN FOR A HIGHER ACCURACY THAN THE CURRENT RELEASE.
+FOLLOW README IF YOU WOULD LIKE TO TRAIN FOR A HIGHER ACCURACY THAN THE CURRENT RELEASE, OTHERWISE, DOWNLOAD THE RELEASE FILE, EXPAND IT, AND RUN IT.
 
 https://youtu.be/_om5nzDifnI
 
